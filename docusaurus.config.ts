@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Paisley Documentation',
   tagline: 'A Financial System That Puts People First',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   url: 'https://docs.paisley.io',
   baseUrl: '/',
   organizationName: 'paisley-io',

@@ -1,3 +1,10 @@
+---
+id: intro
+title: Welcome to Paisley
+sidebar_label: Welcome to Paisley
+---
+
+
 # Welcome to Paisley
 
 Paisley is a financial system that puts people first.
