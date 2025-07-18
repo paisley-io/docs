@@ -3,7 +3,7 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set this to your default branch if different
+      - main
 
 permissions:
   contents: read
@@ -18,10 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -29,13 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build
         run: npm run build
 
-      - name: Upload build output
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4.0.1
         with:
-          path: build  # Docusaurus outputs to 'build' by default
+          path: build
 
   deploy:
     needs: build
@@ -47,4 +47,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.1
