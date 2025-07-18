@@ -9,28 +9,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build Docusaurus
+      - name: Build Docusaurus site
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "Kopcho"
-          git config --global user.email "docs@paisley.io"
-          cd build
-          git init
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/paisley-io/docs.git
-          git checkout -b gh-pages
-          git add .
-          git commit -m "Deploy Paisley Docs"
-          git push --force origin gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
