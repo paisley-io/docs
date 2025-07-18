@@ -38,7 +38,7 @@ const config: Config = {
       title: 'Paisley',
       logo: {
         alt: 'Paisley Logo',
-        src: 'img/logo.svg',
+        src: '/img/logo.svg',
       },
       items: [
         {
