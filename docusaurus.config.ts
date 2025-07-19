@@ -74,11 +74,11 @@ const config: Config = {
           items: [
             {
               label: 'Privacy Policy',
-              href: '/privacy',
+              to: '/docs/privacy',
             },
             {
               label: 'Terms of Use',
-              href: '/terms',
+              to: '/docs/terms',
             },
           ],
         },
