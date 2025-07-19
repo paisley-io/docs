@@ -1,67 +1,65 @@
-/* custom.css */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
-
-/* Global font settings */
 :root {
-  --ifm-font-family-base: 'Source Sans Pro', sans-serif;
-  --ifm-font-family-monospace: monospace;
-  --ifm-heading-font-family: 'IBM Plex Sans', sans-serif;
+  --ifm-font-family-base: 'Source Sans Pro', system-ui, sans-serif;
+  --ifm-heading-font-family: 'IBM Plex Sans', system-ui, sans-serif;
 
-  /* Brand colors */
   --ifm-color-primary: #231F56;
-  --ifm-color-primary-dark: #1f1b4e;
-  --ifm-color-primary-darker: #1a1746;
-  --ifm-color-primary-light: #2e2970;
-  --ifm-color-primary-lighter: #3a3390;
+  --ifm-color-primary-dark: #1e1b4d;
+  --ifm-color-primary-light: #3a367a;
 
-  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
 
-  /* Optional: Secondary color palette */
-  --ifm-color-secondary: #CAD22C;
-  --ifm-code-font-size: 95%;
+  --ifm-footer-background-color: #231F56;
+  --ifm-footer-color: #ffffff;
+
+  --ifm-link-color: #231F56;
+  --ifm-link-hover-color: #CAD22C;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-heading-font-family);
-  font-weight: 700;
-}
-
-/* Body text */
+/* --- Text Color Logic --- */
 body {
-  font-family: var(--ifm-font-family-base);
-}
-
-/* Navbar styling */
-.navbar {
-  background-color: white;
   color: var(--ifm-color-primary);
 }
 
-/* Logo in navbar (assuming SVG or text logo) */
-.navbar__brand {
+.navbar, .navbar__items, .menu, .menu__link {
   color: var(--ifm-color-primary);
 }
 
-/* Links */
+.footer {
+  color: white;
+  background-color: var(--ifm-footer-background-color);
+}
+
+.footer a {
+  color: #CAD22C;
+}
+
+/* --- Autoswap logo --- */
+.navbar__brand > img {
+  content: url("/img/PAISLEY_icon%20DK%20PURPLE.svg");
+}
+
+html[data-theme='dark'] .navbar__brand > img {
+  content: url("/img/PAISLEY_icon%20WHITE.svg");
+}
+
+/* --- Additional Styles --- */
+.button {
+  background-color: #231F56;
+  color: #ffffff;
+  border: none;
+}
+
+.button:hover {
+  background-color: #CAD22C;
+  color: #231F56;
+}
+
 a {
   color: var(--ifm-link-color);
 }
 
-/* Code blocks */
-.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock- {
-  background-color: #f5f5f5;
-}
-
-/* Highlight the apostrophe if styled separately (example) */
-.logo-apostrophe {
-  color: #CAD22C;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--ifm-color-primary);
-  color: white;
+a:hover {
+  color: var(--ifm-link-hover-color);
 }

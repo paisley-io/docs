@@ -37,9 +37,9 @@ const config: Config = {
     navbar: {
       title: 'Paisley',
       logo: {
-        alt: 'Paisley Logo',
-        src: '/img/logo.svg',
-      },
+  alt: 'Paisley Icon Dark Purple',
+  src: 'img/PAISLEY_icon_DK_PURPLE.svg',
+},
       items: [
         {
           type: 'docSidebar',
