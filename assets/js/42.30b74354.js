@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[42],{3042:(e,t,s)=>{s.r(t),s.d(t,{default:()=>c});s(6540);var i=s(539),n=s(7532),u=s(9562),r=s(5932),a=s(4848);function c(){const e=(0,i.T)({id:"theme.NotFound.title",message:"Page Not Found"});return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(n.be,{title:e}),(0,a.jsx)(u.A,{children:(0,a.jsx)(r.A,{})})]})}}}]);
