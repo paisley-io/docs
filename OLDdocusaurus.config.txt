@@ -18,13 +18,7 @@ const config: Config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
-        blog: {
-          showReadingTime: true,
-          routeBasePath: 'blog',
+          sidebarPath: require.resolve('./sidebars.ts'),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,11 +35,6 @@ const config: Config = {
         src: 'img/PAISLEY_icon_DK_PURPLE.svg',
       },
       items: [
-        { to: '/docs/overview', label: 'Overview', position: 'left' },
-        { to: '/docs/time-tokens', label: 'Time Tokens', position: 'left' },
-        { to: '/docs/wallet', label: 'Wallet & Payments', position: 'left' },
-        { to: '/docs/coop', label: 'Coop Membership', position: 'left' },
-        { to: '/blog', label: 'Learn', position: 'left' },
         {
           href: 'https://github.com/paisley-io/docs',
           label: 'GitHub',
