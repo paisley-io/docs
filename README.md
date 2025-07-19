@@ -1,41 +1,68 @@
-# Website
+# Paisley Docs
 
-This website is using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Welcome to the documentation site for **Paisley**, a financial cooperative platform for freelancers, creators, and small businesses. This site is built using [Docusaurus](https://docusaurus.io), and contains product guides, cooperative resources, token usage, and onboarding documentation.
 
-### Installation
+---
 
-```
-$ yarn
-```
-
-### Local Development
+## 📁 Project Structure
 
 ```
-$ yarn start
+paisley-docs/
+├── docs/                  # Main documentation content
+│   ├── overview/          # What is Paisley, vision, etc.
+│   ├── time-tokens/       # Time Token usage and creation
+│   ├── wallet/            # Wallet features and payments
+│   └── coop/              # Cooperative membership and governance
+├── blog/                  # Blog posts and learning articles
+├── static/                # Static files (e.g., logo, downloads)
+├── src/                   # Custom React components and CSS
+├── sidebars.js            # Sidebar structure for docs
+├── docusaurus.config.ts   # Main Docusaurus site configuration
+├── push.sh                # Git push helper script
+├── README.md              # This file
+└── ArchivedForSafety/     # Old configs and backups
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
 
-### Build
+## 🚀 Getting Started
 
-```
-$ yarn build
-```
+To run the site locally:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm install
+npm run start
 ```
 
-Not using SSH:
+To build the site for production:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+npm run build
+npm run serve
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+To push changes (via Git):
+
+```bash
+./push.sh
+```
+
+---
+
+## 🧠 Notes
+
+- The site is structured with **top-level nav tabs** that each load their own **sidebar**.
+- All content pages use Markdown with frontmatter to specify which sidebar they belong to.
+- All Coop governance follows "1 Member = 1 Vote", and documentation reflects that principle.
+
+---
+
+## 🛟 Help & Contribute
+
+- Questions? Email [support@paisley.io](mailto:support@paisley.io)
+- Want to suggest edits? Fork the repo or create a PR.
+- Coop members may also propose edits via the member portal.
+
+---
+
+Built with ♥ by the Paisley Docs Team
