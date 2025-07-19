@@ -1,30 +1,67 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* custom.css */
 
-/* You can override the default Infima variables here. */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* Global font settings */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-font-family-base: 'Source Sans Pro', sans-serif;
+  --ifm-font-family-monospace: monospace;
+  --ifm-heading-font-family: 'IBM Plex Sans', sans-serif;
+
+  /* Brand colors */
+  --ifm-color-primary: #231F56;
+  --ifm-color-primary-dark: #1f1b4e;
+  --ifm-color-primary-darker: #1a1746;
+  --ifm-color-primary-light: #2e2970;
+  --ifm-color-primary-lighter: #3a3390;
+
+  --ifm-link-color: var(--ifm-color-primary);
+
+  /* Optional: Secondary color palette */
+  --ifm-color-secondary: #CAD22C;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+}
+
+/* Body text */
+body {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: white;
+  color: var(--ifm-color-primary);
+}
+
+/* Logo in navbar (assuming SVG or text logo) */
+.navbar__brand {
+  color: var(--ifm-color-primary);
+}
+
+/* Links */
+a {
+  color: var(--ifm-link-color);
+}
+
+/* Code blocks */
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock- {
+  background-color: #f5f5f5;
+}
+
+/* Highlight the apostrophe if styled separately (example) */
+.logo-apostrophe {
+  color: #CAD22C;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--ifm-color-primary);
+  color: white;
 }
