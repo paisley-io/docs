@@ -1,9 +1,7 @@
 ---
 id: privacy
 title: Privacy Policy
-slug: /docs/privacy
 ---
-
 
 # Privacy Policy
 
@@ -60,5 +58,7 @@ Users under 16 must have parental consent.
 ## International Transfers
 
 Data may be stored outside the EEA with appropriate safeguards.
+
+## Review
 
 _Last updated on 1 June 2024._
