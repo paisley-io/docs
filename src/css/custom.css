@@ -37,11 +37,11 @@ body {
 
 /* --- Autoswap logo --- */
 .navbar__brand > img {
-  content: url("/img/PAISLEY_icon%20DK%20PURPLE.svg");
+  content: url("/img/PAISLEY_icon_DK_PURPLE.svg");
 }
 
 html[data-theme='dark'] .navbar__brand > img {
-  content: url("/img/PAISLEY_icon%20WHITE.svg");
+  content: url("/img/PAISLEY_icon_WHITE.svg");
 }
 
 /* --- Additional Styles --- */
