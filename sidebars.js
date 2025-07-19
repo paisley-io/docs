@@ -1,7 +1,4 @@
 module.exports = {
-  overviewSidebar: [
-    'overview/index'
-  ],
   timeTokensSidebar: [
     'time-tokens/index',
     'time-tokens/value-proposition',
