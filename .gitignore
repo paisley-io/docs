@@ -1,25 +1,23 @@
-# Dependencies
+# Node dependencies
 /node_modules/
 
-# Build output
+# Build artifacts
 /build/
 /.docusaurus/
-/intro/
-/markdown-page/
-/assets/
-/img/
-/sitemap.xml
-/index.html
-/404.html
 
-# Misc
-.DS_Store
-.env*
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# GitHub Pages
-# Prevent deploying the wrong branch content
-gh-pages
+# OS metadata
+.DS_Store
+
+# Environment files
+.env*
+.env
+
+# GitHub Pages temp clones (e.g., during local deploy)
+docs-gh-pages*/
+
